@@ -4,7 +4,7 @@
 <p>Secondary Role: </p>
 <h3><b> Dolma Sherpa </b></h3>
 <p>Primary Role: UI Design Lead</p>
-<p>Secondary Role: Project Manager</p>
+<p>Secondary Role: Project Manager </p>
 <h3><b> Anna Leong </b></h3>
 <p>Primary Role: UX Design Lead</p>
 <p>Secondary Role: IX Designer</p>
