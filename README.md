@@ -6,11 +6,8 @@
 <p>Primary Role: UI Design Lead</p>
 <p>Secondary Role: Project Manager </p>
 <h3><b> Anna Leong </b></h3>
-<p>Primary Role: </p>
-<p>Secondary Role: </p>
-<h3><b> Leanne Chin </b></h3>
-<p>Primary Role: </p>
-<p>Secondary Role: </p>
+<p>Primary Role: UX Design Lead</p>
+<p>Secondary Role: IX Designer</p>
 <h3><b> Mikayla Lisiy </b></h3>
 <p>Primary Role: </p>
 <p>Secondary Role: </p>
