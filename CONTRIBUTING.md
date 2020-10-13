@@ -5,4 +5,5 @@ system you are using <b>(Mac or Windows).</b></p>
 <p>You're going to want to fork the repo before doing anything else in Github browser (This process is the same for everyone).</p>
 
 ![fork](https://user-images.githubusercontent.com/55995794/95892960-4838df00-0d55-11eb-97c2-1b950821274a.png)
+<p>Follow steps <b> 1, 2, & 3</b></p>
 https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo
