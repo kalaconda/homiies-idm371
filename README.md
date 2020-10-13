@@ -1,7 +1,7 @@
 # Home Management App
 <h3><b> Victoria Stauffer </b></h3>
-<p>Primary Role: </p>
-<p>Secondary Role: </p>
+<p>Primary Role: Project Manager</p>
+<p>Secondary Role: Developer</p>
 <h3><b> Dolma Sherpa </b></h3>
 <p>Primary Role: UI Design Lead</p>
 <p>Secondary Role: Project Manager </p>
