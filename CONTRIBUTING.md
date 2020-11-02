@@ -87,6 +87,9 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
     🧬 - Backend coding or getting functionality working
   </li>
   <li>
+    👾 - Microinteractions 
+  </li>
+  <li>
     📁 - Moving files/ File management
   </li>
   <li>
