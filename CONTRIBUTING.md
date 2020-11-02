@@ -1,4 +1,4 @@
-<h1>How to make Pull Requests, Push to Repo, and Commit Messages</h1>
+<h1>How to Pull, Push to Repo, and Commit Messages</h1>
 <p>Follow the directions of the links for whichever program you are using, wether it's <b>Sourcetree or Github Desktop.</b> Also take in account the type of operating
 system you are using <b>(Mac or Windows).</b></p>
 <h2> Forking </h2>
@@ -48,5 +48,46 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
 <p><b>Step 3)</b> Click "pull" and the latest changes from the repo should be in your local folder on your desktop. Make sure to double check.</p>
 
 <h3>Windows/Github Desktop</h3>
-<p><b>(Skip to 4:03-4:27) </b>https://www.youtube.com/watch?v=ukJEPyKubzA&t=194s</p>
+<p><b>(Skip to 4:03-4:27)</b>https://www.youtube.com/watch?v=ukJEPyKubzA&t=194s</p>
 
+<br></br>
+
+<h2>Committing Changes and Pushing them to the repo</h2>
+<p> Once you have pulled the latest changes from the repo, any changes you make in your local folder will allow you to make a commit in your repository management system (Sourcetree or Github). After committing your changes, you will be able to push them to the repo by making a pull request. 🛑 Please keep in mind that <b> pulling from the repo is not the same as a pull request </b> 🛑 To make a pull request, you are <b> pushing </b> to the repo. </p>
+
+<p><b>⚠Make sure to follow the resources that apply to your operating system and choice of repository management.⚠</b></p>
+
+<h3>Windows/Mac Sourcetree</h3>
+
+<p><b>Commiting: (Skip to 4:55-5:19)</b>https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
+<p><b>Pushing (Pull Request): (Skip to 5:41-6:10)</b>https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
+
+<h3>Windows/Mac Github Desktop</h3>
+
+<p><b>(Skip to 6:05-6:43)</b>https://www.youtube.com/watch?v=FIabco-p_nY</p>
+
+<h2>Commit Guide</h2>
+<p> To organize your commits within your team, commit files seperately if you are making individual edits to multiple files. </p>
+
+<p><b> Example: </b></p>
+
+![commitguide](https://user-images.githubusercontent.com/55995794/97827706-0e436480-1c93-11eb-8f55-b9439125d096.png)
+
+<h3>A good way of organizing your commits:</h3>
+<ul>
+  <li>
+    ✨ - Anything design related (css, added iconography/graphics, ui)
+  </li>
+  <li>
+    🧬 - Backend coding or getting functionality working
+  </li>
+  <li>
+    📁 - Moving files/ File management
+  </li>
+  <li>
+    🔨 - Fixing a typo or any minor mistake
+  </li>
+  <li>
+    🗑 - Trashed files
+  </li>
+<ul>
