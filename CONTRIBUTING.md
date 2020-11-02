@@ -48,7 +48,7 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
 <p><b>Step 3)</b> Click "pull" and the latest changes from the repo should be in your local folder on your desktop. Make sure to double check.</p>
 
 <h3>Windows/Github Desktop</h3>
-<p><b>(Skip to 4:03-4:27)</b>https://www.youtube.com/watch?v=ukJEPyKubzA&t=194s</p>
+<p><b>(Skip to 4:03-4:27)</b> https://www.youtube.com/watch?v=ukJEPyKubzA&t=194s</p>
 
 <br></br>
 
@@ -59,12 +59,12 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
 
 <h3>Windows/Mac Sourcetree</h3>
 
-<p><b>Commiting: (Skip to 4:55-5:19)</b>https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
-<p><b>Pushing (Pull Request): (Skip to 5:41-6:10)</b>https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
+<p><b>Commiting: (Skip to 4:55-5:19)</b> https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
+<p><b>Pushing (Pull Request): (Skip to 5:41-6:10)</b> https://www.youtube.com/watch?v=FIabco-p_nY&t=320s</p>
 
 <h3>Windows/Mac Github Desktop</h3>
 
-<p><b>(Skip to 6:05-6:43)</b>https://www.youtube.com/watch?v=FIabco-p_nY</p>
+<p><b>(Skip to 6:05-6:43)</b> https://www.youtube.com/watch?v=FIabco-p_nY</p>
 
 <h2>Commit Guide</h2>
 <p> To organize your commits within your team, commit files seperately if you are making individual edits to multiple files. </p>
