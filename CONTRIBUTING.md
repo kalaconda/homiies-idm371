@@ -73,29 +73,9 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
 
 ![commitguide](https://user-images.githubusercontent.com/55995794/97827706-0e436480-1c93-11eb-8f55-b9439125d096.png)
 
-<h3>A good way of organizing your commits:</h3>
+<h3>A good way of organizing your commits: https://gitmoji.carloscuesta.me/</h3>
 
 <p><b> How to use Emoji Keyboard on Mac: </b> Cmd + Ctrl + Space </p>
 
 <p><b> How to use Emoji Keyboard on Windows: </b> Windows key + Period </p>
 
-<ul>
-  <li>
-    ✨ - Anything design related (css, added iconography/graphics, ui)
-  </li>
-  <li>
-    🧬 - Backend coding or getting functionality working
-  </li>
-  <li>
-    👾 - Microinteractions 
-  </li>
-  <li>
-    📁 - Moving files/ File management
-  </li>
-  <li>
-    🔨 - Fixing a typo or any minor mistake
-  </li>
-  <li>
-    🗑 - Trashed files
-  </li>
-<ul>
