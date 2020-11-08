@@ -50,6 +50,18 @@ https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-gith
 <h3>Windows/Github Desktop</h3>
 <p><b>(Skip to 4:03-4:27)</b> https://www.youtube.com/watch?v=ukJEPyKubzA&t=194s</p>
 
+<h3>Mac/Github Desktop</h3>
+<p>https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop
+</br>
+git pull is a convenient shortcut for completing both git fetch and git merge in the same command:
+</br>
+$ git pull remotename branchname
+# Grabs online updates and merges them with your local work
+</br>
+Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled.
+</p>
+
+
 <br></br>
 
 <h2>Committing Changes and Pushing them to the repo</h2>
