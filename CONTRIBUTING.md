@@ -60,6 +60,7 @@ $ git pull remotename branchname
 </br>
 Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled.
 </p>
+<img width="1072" alt=" " src="https://user-images.githubusercontent.com/55853699/98494405-ed3ac080-220a-11eb-956d-5b7fcc3784cd.png">
 
 
 <br></br>
