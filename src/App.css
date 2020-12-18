@@ -9,12 +9,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation-duration: 2s;
+    animation-name: slidein;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #121836;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +23,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #F2B705;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    margin-left: 100%;
+    width: auto;
   }
+
   to {
-    transform: rotate(360deg);
+    margin-left: 0%;
+    width: auto;
   }
 }
