@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  overflow-y: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  padding: 30px 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,20 +17,32 @@
 }
 
 .App-header {
-  background-color: #121836;
+  background-color: #242C6A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   overflow: hidden;
 }
 
 .App-link {
-  color: #F2B705;
+  font-family: 'ubunturegular';
+  color: white;
   text-decoration: none;
+}
+
+.App-link p {
+  line-height: 10px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'ubuntubold';
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes slidein {
@@ -41,4 +55,23 @@
     margin-left: 0%;
     width: auto;
   }
+}
+
+/* fonts */
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
