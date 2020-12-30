@@ -1,23 +1,30 @@
-import logo from './images/logo.png';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <h2> Homiies. </h2>
-        <img src={logo} className="App-logo" alt="logo" />
-        <a className="App-link"
-          href="https://github.com/mikaylalisiy/homiies-idm371"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>Live together.</p> 
-          <p>Be responsible together.</p>
-        </a>
-      </header>
-    </div>
-  );
-}
 
+import Home from './components/Home';
+import Tasks from './components/Tasks';
+import Payment from './components/Payment';
+import Error from './components/Error';
+import Navigation from './components/Navigation';
+ 
+class App extends Component {
+  render() {
+    return (      
+       <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/tasks" component={Tasks}/>
+             <Route path="/payment" component={Payment}/>
+            <Route component={Error}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+    );
+  }
+}
+ 
 export default App;
