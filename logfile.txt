@@ -1,0 +1,9 @@
+**LOG FILE**
+
+Last edit 12/30/20 by Mikayla
+
+I created navigation across multiple pages using react router (refer to resources posted in backend/frontend channel).
+
+Currently trying to figure out how to implement an internal link in home.js and hide our navigation from our welcoming
+screens.
+
