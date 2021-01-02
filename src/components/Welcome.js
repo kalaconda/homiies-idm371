@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
  
 const welcome = () => {
     return (
@@ -7,14 +8,12 @@ const welcome = () => {
         <header className="purple">
         <h2> Homiies. </h2>
           <img src={logo} className="App-logo" alt="logo" />
-          <a className="App-link"
-            href="https://github.com/mikaylalisiy/homiies-idm371"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <Link to="/home">
+            <div className="App-link">
             <p>Live together.</p> 
             <p>Be responsible together.</p>
-          </a>
+            </div>
+            </Link>
         </header>
       </div>
     );
