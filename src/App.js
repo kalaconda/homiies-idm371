@@ -1,46 +1,44 @@
-import React, {useState, useEffect} from 'react';
-import fire from './fire';
-import Login from './components/Login';
+import React, {useState, useEffect} from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import fire from './components/fire';
+import Login from './pages/Login';
 import './App.css';
+import Home from './pages/Home';
 
-const App = () => {
-
-  // set username, email, and password to users
+function App() {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // error with login info
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
 
-  //clear inputs
   const clearInputs = () => {
-    setEmail('');
-    setPassword('');
-  }
+    setEmail("");
+    setPassword("");
+  };
 
-  //clear errors
   const clearErrors = () => {
-    setEmailError('');
-    setPasswordError('');
-  }
+    setEmailError("");
+    setPasswordError("");
+  };
 
   const handleLogin = () => {
     clearErrors();
     fire
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .catch(err => {
-        switch(err.code){
+      .catch((err) => {
+        switch (err.code) {
           case "auth/invalid-email":
           case "auth/user-disabled":
           case "auth/user-not-found":
-            setEmaillError(err.message);
+            setEmailError(err.message);
             break;
           case "auth/wrong-password":
             setPasswordError(err.message);
             break;
+          default:
         }
       });
   };
@@ -50,27 +48,28 @@ const App = () => {
     fire
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .catch(err => {
-        switch(err.code){
+      .catch((err) => {
+        switch (err.code) {
           case "auth/email-already-in-use":
           case "auth/invalid-email":
-            setEmaillError(err.message);
+            setEmailError(err.message);
             break;
           case "auth/weak-password":
             setPasswordError(err.message);
             break;
+          default:
         }
       });
   };
 
-  const handleLogout = () => {
+  function handleLogOut() {
     fire.auth().signOut();
-  };
+  }
 
   const authListener = () => {
-    fire.auth().onAuthStateChanged((user => {
-      if(user){
-        clearInputs();
+    fire.auth().onAuthStateChanged((user) => {
+      clearInputs();
+      if (user) {
         setUser(user);
       } else {
         setUser("");
@@ -82,22 +81,32 @@ const App = () => {
     authListener();
   }, []);
 
-  return (    
-      <div className="App">
-        <Login 
-        email={email} 
-        setEmail={setEmail} 
-        password={password} 
-        setPassword={setPassword} 
-        handleLogin={handleLogin}
-        handleSignup={handleSignup}
-        hasAccount={hasAccount}
-        setHasAccount={setHasAccount}
-        emailError={emailError}
-        passwordError={passwordError}
-        />
-      </div>
-    );
-};
- 
+  return (
+    <div className="App">
+      <Router>
+        {user ? (
+          <>
+            <Route exact path="/">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+          </>
+        ) : (
+          <Login
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSignup={handleSignup}
+            hasAccount={hasAccount}
+            setHasAccount={setHasAccount}
+            emailError={emailError}
+            passwordError={passwordError}
+          />
+        )}
+      </Router>
+    </div>
+  );
+}
+
 export default App;
