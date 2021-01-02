@@ -8,6 +8,8 @@ I created navigation across multiple pages using react router (refer to resource
 Currently trying to figure out how to implement an internal link in home.js and hide our navigation from our welcoming
 screens.
 
+----------
+
 Last edit 1/1/21 by Mikayla
 System Information: (Microsoft Windows 10 Pro)
 
@@ -17,4 +19,11 @@ This is so this is seperate from the pages that contain navigation.
 - There also seems to be a weird issue with error.js loading when the browser starts up, although the router has it set to load welcome.js
 when the user first visits the app. I'm getting no console log errors for this.
 
+----------
 
+Last edit 1/2/21 by Mikayla
+System Information: (Microsoft Windows 10 Pro)
+
+- archived react router navigation to implement login system
+- working on changing the structure of navigation so that navigation can be hidden from specific components.
+- current console error with lines 78:6 in App.js. Issue is unknown for now.
