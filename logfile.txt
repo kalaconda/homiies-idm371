@@ -14,8 +14,6 @@ System Information: (Microsoft Windows 10 Pro)
 - Moved our initial loading screen to Welcome.js located in src/components. 
 This is so this is seperate from the pages that contain navigation.
 - Currently figuring out how to seperate the welcoming screen from screens that contain navigation.
-- Goal: Temporarily implement an internal link on Welcome.js where it says the app slogan and route the link to home.js. 
-- After this, I can implement the login screens.
 - There also seems to be a weird issue with error.js loading when the browser starts up, although the router has it set to load welcome.js
 when the user first visits the app. I'm getting no console log errors for this.
 

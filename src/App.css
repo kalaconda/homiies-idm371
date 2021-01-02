@@ -80,10 +80,16 @@ div.topnav {
   overflow: hidden;
 }
 
+/* links */
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
 .App-link {
   font-family: 'ubunturegular';
   color: white;
-  text-decoration: none;
 }
 
 .App-link p {
