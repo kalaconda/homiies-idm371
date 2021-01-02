@@ -25,5 +25,6 @@ Last edit 1/2/21 by Mikayla
 System Information: (Microsoft Windows 10 Pro)
 
 - archived react router navigation to implement login system
+- login system fully implemented with sign up/sign in/ log out details
+- organized structure of files, screens are now located in src/pages, fire.js is in components folder.
 - working on changing the structure of navigation so that navigation can be hidden from specific components.
-- current console error with lines 78:6 in App.js. Issue is unknown for now.
