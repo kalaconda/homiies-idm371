@@ -8,7 +8,7 @@ const welcome = () => {
         <header className="purple">
         <h2> Homiies. </h2>
           <img src={logo} className="App-logo" alt="logo" />
-            <Link to="/home">
+            <Link to="/login">
             <div className="App-link">
             <p>Live together.</p> 
             <p>Be responsible together.</p>
