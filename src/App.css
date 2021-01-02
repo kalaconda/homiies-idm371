@@ -1,7 +1,8 @@
-div.nav {
+/* bottom nav */
+div.bottomnav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   overflow: hidden;
   position: fixed;
@@ -11,15 +12,38 @@ div.nav {
   width: 100%;
 }
 
-div.nav a {
+div.bottomnav a {
   text-decoration: none;
   color: rgb(124, 124, 124);
 }
 
+/* top nav */
+div.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #242C6A;
+  overflow: hidden;
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 0;
+  width: 100%;
+}
+
+/* alignment of app */
 .App {
   text-align: center;
 }
 
+/* top nav logo */
+.App-logo2 {
+  height: 10vmin;
+  pointer-events: none;
+  padding: 5px 5px;
+}
+
+/* app logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,8 +57,20 @@ div.nav a {
   }
 }
 
-.App-header {
+/* bgs */
+.purple {
   background-color: #242C6A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.white {
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
