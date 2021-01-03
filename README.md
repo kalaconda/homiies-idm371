@@ -58,15 +58,15 @@
 <h3><b>4) In command line, direct to root of your project folder. Example:</h3>
   
   ```
-  cd C:/Users/Yuri/Desktop/homiies
+  cd C:/Users/Yuri/Desktop/homiies <!-- cd is used to locate the folder -->
   ```  
   
   then run these commands 
   
   ```
-  npm install //installs node modules + package-lock.json file
+  npm install <!--installs node modules + package-lock.json file -->
   ```
   
   ```
-  npm start //loads your local host server
+  npm start <!--loads your local host server-->
   ```
