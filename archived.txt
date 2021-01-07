@@ -1,3 +1,5 @@
+<!-- Archived/ App.js - Navigation -->
+
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -6,7 +8,6 @@ import Welcome from './components/Welcome';
 import Home from './components/Home';
 import Tasks from './components/Tasks';
 import Payment from './components/Payment';
-Archived/ App.js - Navigation
 
 import Notifications from './components/Notifications';
 import Error from './components/Error';
