@@ -123,20 +123,31 @@ h2 {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
   margin: 0 auto;
-  width: 80%;
+  overflow: hidden;
+}
+
+/* align labels + inputs to left */
+.inputs {
+  text-align: left;
+  margin: 0 auto;
 }
 
 /* text */
-label {
-  text-align: left;
+.name label {
   font-size: 18px;
 }
 
 /* input box */
 input {
   outline: none;
-  border:none;
+  border-top: none;
+  border-bottom: 3px solid #F6A417;
+  border-left: none;
+  border-right: none;
 }
 
 input[type=text] {
@@ -148,7 +159,7 @@ input[type=password] {
 }
 
 button {
-  font-family: ubuntubold;
+  font-family: 'ubuntubold';
   font-size: 18px;
   background-color: #F14F5E;
   color: white;
