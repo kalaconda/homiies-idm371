@@ -33,9 +33,14 @@
     node -v
     
   </li>
-  <li> <a href="https://yarnpkg.com/" target="_blank">Yarn</a>  <b> To check your yarn version:</b>
+  <li> <b> To check your Yarn version:</b>
       
     yarn -v
+    
+  </li>
+  <li> <b> To check your firebase version:</b>
+      
+    firebase --version
     
   </li>
 </ul>
