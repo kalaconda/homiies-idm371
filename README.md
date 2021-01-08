@@ -28,7 +28,7 @@
 <h3><b>1)</b> Make sure the following dependencies are downloaded </h3>
 
 <ul>
-  <li> <a href="https://nodejs.org/en/" target="_blank">Node js</a> <b> To check your node version:</b>
+  <li> <b> To check your Node version:</b>
     
     node -v
     
@@ -38,7 +38,7 @@
     yarn -v
     
   </li>
-  <li> <b> To check your firebase version:</b>
+  <li> <b> To check your Firebase version:</b>
       
     firebase --version
     
