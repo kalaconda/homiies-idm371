@@ -1,4 +1,5 @@
 import React from 'react';
+import NB from "./NavBar"; 
 import logo60x60 from '../images/icon60x60.png';
 
 function Home({ handleLogOut }) {
@@ -10,8 +11,10 @@ function Home({ handleLogOut }) {
         <button className="logout-button" onClick={handleLogOut}>
           Logout
         </button>
+        {/*NB is our navbar*/}
+        <NB />
         </div>
   );
-}
+};
 
 export default Home;

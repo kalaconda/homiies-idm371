@@ -28,3 +28,12 @@ System Information: (Microsoft Windows 10 Pro)
 - login system fully implemented with sign up/sign in/ log out details
 - organized structure of files, screens are now located in src/pages, fire.js is in components folder.
 - working on changing the structure of navigation so that navigation can be hidden from specific components.
+
+----------
+
+Last edit 1/12/21 by Mikayla
+System Information: (Microsoft Windows 10 Pro)
+
+- navigation is implemented in Home.js after loging in (see Navbar.js, SidebarData.js, & Home.js to see how this is implemented)
+- current issue with navlinks not directing to their specific screens. 
+
