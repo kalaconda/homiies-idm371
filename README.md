@@ -38,9 +38,6 @@ npm -v
 
 <h3><b>3)</b> Download the repo by going to clone > download zip (or pulling the latest changes from the repo using your choice of repository management) </h3>
 
-<h3><b>4)</b> In MS Teams, download the .firebase folder from General > Files > Backend > gitignore files, extract the zip and put this folder at the root of your
-project folder</h3>
-
 <h3><b>4)</b> In commandline, direct to your project folder </h3>
 
 ```
