@@ -25,53 +25,70 @@
 
 <h1> How to run app locally: </h1>
 
-<h3><b>1)</b> Make sure the following dependencies are downloaded </h3>
+<h3><b>1)</b> Install nodejs (The LTS version) https://nodejs.org/en/ </h3>
 
-<ul>
-  <li> <b> To check your Node version:</b>
-    
-    node -v
-    
-  </li>
-  <li> <b> To check your Yarn version:</b>
-      
-    yarn -v
-    
-  </li>
-  <li> <b> To check your Firebase version:</b>
-      
-    firebase --version
-    
-  </li>
-</ul>
-
-<h3><b>2)</b> Clone this repository to your repo management system </h3>
-
-<h3><b>3)</b> Open your folder in vs code and see if the following debug scripts are in package.json (lines 14-19)</h3>
+<h3><b>2)</b> Once this is installed, in commandline run </h3>
 
 ```
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+node -v
+npm -v
 ```
 
-<h3><b>If there is a folder called node modules in the root of your project, delete them. Also delete package-lock.json file. </h3>
+<h3> both commands should give you a version number which means you successfully installed nodejs </h3>
+
+<h3><b>3)</b> Download the repo by going to clone > download zip (or pulling the latest changes from the repo using your choice of repository management) </h3>
+
+<h3><b>4)</b> In MS Teams, download the .firebase folder from General > Files > Backend > gitignore files, extract the zip and put this folder at the root of your
+project folder</h3>
+
+<h3><b>4)</b> In commandline, direct to your project folder </h3>
+
+```
+cd yourprojectfolderspath
+```
+
+<h3><b>5)</b> In commandline, install node_modules (the node_modules folder will appear at the root of your project) </h3>
   
-<h3><b>4) In command line, direct to root of your project folder. Example:</h3>
+```
+npm install
+```
+
+<h3> If you get the following prompt, go ahead and install the needed developer tools </h3>
+
+![djffjks](https://user-images.githubusercontent.com/55995794/105111160-4f773380-5a8e-11eb-8cc8-4a3df436af02.png)
+
+<h3><b>6)</b> In commandline, run </h3>
   
-  ```
-  cd C:/Users/Yuri/Desktop/homiies <!-- cd is used to locate the folder -->
-  ```  
+```
+npm install -g yarn
+```
+
+<h3> If you get this message </h3>
   
-  then run these commands 
+``` 
+npm WARN checkPermissions Missing write access to /user/local/lib/node_modules 
   
-  ```
-  npm install <!--installs node modules + package-lock.json file -->
-  ```
+``` 
   
-  ```
-  npm start <!--loads your local host server-->
-  ```
+<h3> do this command next, </h3>
+
+```
+sudo chown -R $USER /usr/local/lib/node_modules
+```
+
+<h3><b>7)</b> It will then ask you for a password, type in the password to your pc </h3>
+
+
+<h3><b>8)</b> In commandline, run this command again (ignore the error message if any)</h3>
+
+```
+npm install -g yarn again
+```
+
+<h3><b>9)</b> Then in commandline, start up your local server by running</h3>
+
+```
+npm start
+```
+
+<h3> Your local server will then start up in the browser automatically and you will be prompted with the login screen</h3>
