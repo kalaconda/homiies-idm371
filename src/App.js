@@ -90,6 +90,18 @@ function App() {
             <Route exact path="/">
               <Home handleLogOut={handleLogOut} />
             </Route>
+            <Route exact path="/home">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/tasks">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/payment">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/notifications">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
           </>
         ) : (
           <Login

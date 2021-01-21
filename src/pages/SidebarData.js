@@ -1,6 +1,7 @@
 import React from "react";
 import * as MdIcons from "react-icons/md";
 
+/* your bottom navigation */
 export const SidebarData = [
   {
     title: "Home",
@@ -11,12 +12,6 @@ export const SidebarData = [
   {
     title: "Tasks",
     path: "/tasks",
-    icon: <MdIcons.MdDescription />,
-    cName: "nav-text"
-  },
-  {
-    title: "Add Task",
-    path: "/",
     icon: <MdIcons.MdDescription />,
     cName: "nav-text"
   },

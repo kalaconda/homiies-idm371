@@ -31,9 +31,18 @@ System Information: (Microsoft Windows 10 Pro)
 
 ----------
 
+BEGINNING OF TERM
+
 Last edit 1/12/21 by Mikayla
 System Information: (Microsoft Windows 10 Pro)
 
-- navigation is implemented in Home.js after loging in (see Navbar.js, SidebarData.js, & Home.js to see how this is implemented)
 - current issue with navlinks not directing to their specific screens. 
 
+----------
+
+WEEK 2
+
+Last edit 1/21/21 by Mikayla
+System Information: (Microsoft Windows 10 Pro)
+
+- navigation works locally
