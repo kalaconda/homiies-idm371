@@ -1,10 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import fire from './components/fire';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import './App.css';
 
+
+
+/*** TODO LIST  ***/
+
+/*** LOGIN SYSTEM  ***/
 
 function App() {
   const [user, setUser] = useState("");
@@ -82,12 +87,25 @@ function App() {
     authListener();
   }, []);
   
+/*** REACT ROUTER / NAVIGATION  ***/
   return (
     <div className="App">
       <Router>
         {user ? (
           <>
             <Route exact path="/">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/home">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/tasks">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/payment">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/notifications">
               <Home handleLogOut={handleLogOut} />
             </Route>
           </>
