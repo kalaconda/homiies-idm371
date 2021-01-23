@@ -2,9 +2,9 @@ import React from 'react';
 
 const Form = () => {
     return(
-        <form>
+        <form className="addtodo">
             <input type="text" placeholder="Add todo..." />
-            <button type="submit">Add todo</button>
+            <button type="submit" className="addtask">+</button>
         </form>
     )
 }

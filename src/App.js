@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import fire from './components/fire';
-import Login from './pages/Login';
-import Home from './pages/Home';
-import './App.css';
-
-
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import fire from "./components/fire";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Tasks from "./pages/Tasks";
+import Form from "./pages/Form";
+import TodoItem from "./pages/TodoItem";
+import "./App.css";
 
 /*** TODO LIST  ***/
 
@@ -86,8 +87,8 @@ function App() {
   useEffect(() => {
     authListener();
   }, []);
-  
-/*** REACT ROUTER / NAVIGATION  ***/
+
+  /*** REACT ROUTER / NAVIGATION  ***/
   return (
     <div className="App">
       <Router>
@@ -100,7 +101,11 @@ function App() {
               <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/tasks">
-              <Home handleLogOut={handleLogOut} />
+              <Tasks />
+              <div className="formcontainer">
+              <Form />
+              <TodoItem />
+              </div>
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />
