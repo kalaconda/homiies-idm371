@@ -79,7 +79,7 @@ sudo chown -R $USER /usr/local/lib/node_modules
 <h3><b>8)</b> In commandline, run this command again (ignore the error message if any)</h3>
 
 ```
-npm install -g yarn again
+npm install -g yarn
 ```
 
 <h3><b>9)</b> Then in commandline, start up your local server by running</h3>
