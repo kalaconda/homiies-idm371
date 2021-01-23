@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import fire from "./components/fire";
+import { v4 as uuidv4 } from 'uuid';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
@@ -8,11 +9,20 @@ import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
 import "./App.css";
 
-/*** TODO LIST  ***/
-
-/*** LOGIN SYSTEM  ***/
-
 function App() {
+
+  /*** TODO LIST  ***/
+
+  /* input value */
+  const [inputValue, setInputValue] = useState("");
+  /* todos */
+  const [todos, setTodos] = useState([]);
+  /* submit */
+  const handleSubmit = e => {
+    e.preventDefault();
+  }
+
+  /*** LOGIN SYSTEM  ***/
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -102,10 +112,6 @@ function App() {
             </Route>
             <Route exact path="/tasks">
               <Tasks />
-              <div className="formcontainer">
-              <Form />
-              <TodoItem />
-              </div>
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />
