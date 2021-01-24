@@ -9,6 +9,7 @@ import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
 import "./App.css";
 
+
 function App() {
 
   /*** TODO LIST  ***/
@@ -20,7 +21,8 @@ function App() {
   /* submit */
   const handleSubmit = e => {
     e.preventDefault();
-  }
+    setTodos([...todos, { todoText: inputValue, todoId: uuidv4() }]);
+  };
 
   /*** LOGIN SYSTEM  ***/
   const [user, setUser] = useState("");
@@ -111,7 +113,7 @@ function App() {
               <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/tasks">
-              <Tasks />
+              <Tasks handleSubmit={handleSubmit} todos={todos} />
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />

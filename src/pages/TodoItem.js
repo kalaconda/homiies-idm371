@@ -1,12 +1,16 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = ({todos}) => {
     return(
-        <div className="todoItem">
-            <p>hello</p>
-            <span>X</span>
-        </div>
-    )
-}
+        <>
+        {todos.map(todoItem => (
+            <div key={todoItem.todoId} className="todoItem">
+                <p>{todoItem.todoText}</p>
+                <span>X</span>
+            </div>
+        ))}
+        </>
+    );
+};
 
 export default TodoItem;
