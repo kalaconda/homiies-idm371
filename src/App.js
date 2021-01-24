@@ -113,7 +113,7 @@ function App() {
               <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/tasks">
-              <Tasks handleSubmit={handleSubmit} todos={todos} />
+              <Tasks handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue}/>
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />
