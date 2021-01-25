@@ -5,19 +5,26 @@
 
 /* bottom nav */
 div.bottomnav {
+  -webkit-box-shadow: 0 0 10px -3px #777;
+     -moz-box-shadow: 0 0 10px -3px #777;
+          box-shadow: 0 0 10px -3px #777;
   background-color: rgba(255, 255, 255, 0.534);
   width: 100%;
   height: 70px;
   position: fixed;
+  font-family: 'ubuntubold';
   bottom: 0;
 }
 
 ul.navcontent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  font-size: 18px;
 }
 
-ul.navcontent li {
+li.nav-text {
+  flex-direction: column;
   list-style: none;
   text-decoration: none;
   padding-left: 5px;
@@ -82,10 +89,54 @@ div.topnav {
   overflow: hidden;
 }
 
+.white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TODO LIST */
+span.check {
+  color: #242C6A;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.todoItem {
+  font-family: 'ubunturegular';
+  background-color: #EDEFFA;
+  border-radius: 10px;
+  width: 90%;
+  height: 87px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* the purple line decoration on the tasks */
+div.decorline {
+  background-color: #242C6A;
+  border-radius: 10px 0 0 10px;
+  height: 87px;
+  width: 15px;
+  position: absolute;
+  left: 17px;
+}
+
 /* links */
-a { text-decoration: none; }
+a { 
+  text-decoration: none; 
+  color: rgb(134, 134, 134);
+  list-style: none;
+}
 a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
+a:hover { 
+  text-decoration: none; 
+  color: #242C6A;
+}
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
@@ -107,7 +158,24 @@ h2 {
   margin: 0;
 }
 
-/*** LOGIN SYSTEM ***/
+h3 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* h3 heading on task page */
+div.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* content for div heading */
+div.yellowline {
+  background-color: #F7D720;
+  height: 20px;
+  width: 10px;
+}
 
 /* login */
 .loginContainer {
@@ -119,6 +187,10 @@ h2 {
   width: 70%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+form {
+  padding: 1.5rem 1rem;
 }
 
 /* align labels + inputs to left */
@@ -149,7 +221,8 @@ input[type=password] {
   font-size: 20px;
 }
 
-button {
+/* Buttons */
+button.loginbtn {
   font-family: 'ubuntubold';
   font-size: 18px;
   background-color: #F14F5E;
@@ -160,18 +233,16 @@ button {
   padding: 15px 40px;
 }
 
-/* Adding Todo */
-form.formcontainer {
-    padding: 0 1rem;
-}
-
 button.addtask {
   background-color: #242C6A;
-  color: #DFEFE4;
   border-radius: 50%;
-  width: 50px;
-  height: 75px;
-  padding : none;
+  color: #DFEFE4;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  width: 30px;
+  height: 30px;
 }
 
 /* fonts */

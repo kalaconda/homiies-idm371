@@ -8,7 +8,7 @@ const Form = ({inputValue, setInputValue, handleSubmit}) => {
             value= {inputValue} 
             onChange= {e => setInputValue(e.target.value)} 
             type="text" 
-            placeholder="Add todo..." 
+            placeholder="Enter task..." 
             />
             <button type="submit" className="addtask">+</button>
         </form>
