@@ -8,7 +8,7 @@ import logo60x60 from '../images/icon60x60.png';
   add, display, complete, filter, and delete todos
 */
 
-const Tasks = () => {
+const Tasks = ({inputValue, setInputValue, handleSubmit, todos, errorMsg, removeTodo}) => {
     return (
       <div className="App">
       <div className="white">
@@ -20,7 +20,12 @@ const Tasks = () => {
           inputValue= {inputValue} 
           setInputValue= {setInputValue} 
           />
-        <TodoItem />
+          <div className="heading">
+            <div class="yellowline"></div>
+            <h3>Tasks</h3>
+          </div>
+        {/*<p className="errorMsg">{errorMsg}</p>*/}
+        <TodoItem removeTodo={removeTodo} todos={todos} />
       </div>
       <NB />
     </div>

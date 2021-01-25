@@ -1,12 +1,17 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = ({todos, removeTodo}) => {
     return(
-        <div className="todoItem">
-            <p>hello</p>
-            <span>X</span>
-        </div>
-    )
-}
+        <>
+        {todos.map(todoItem => (
+                <div key={todoItem.todoId} className="todoItem">
+                    <div className="decorline"></div>
+                    <span className="check" onClick={() => removeTodo(todoItem.todoId)}>X</span>
+                    <p>{todoItem.todoText}</p>
+                </div>
+        ))}
+        </>
+    );
+};
 
 export default TodoItem;

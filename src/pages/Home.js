@@ -8,7 +8,7 @@ function Home({ handleLogOut }) {
       <div className="topnav">
           <img src={logo60x60} className="App-logo2" alt="logo" />
         </div>
-        <button className="logout-button" onClick={handleLogOut}>
+        <button className="loginbtn"  onClick={handleLogOut}>
           Logout
         </button>
         {/*NB is our navbar*/}

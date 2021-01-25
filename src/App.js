@@ -9,6 +9,7 @@ import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
 import "./App.css";
 
+
 function App() {
 
   /*** TODO LIST  ***/
@@ -17,9 +18,23 @@ function App() {
   const [inputValue, setInputValue] = useState("");
   /* todos */
   const [todos, setTodos] = useState([]);
-  /* submit */
+  /* error message for empty input field */
+  const [errorMsg, setErrorMsg] = useState("")
+  /* submit / prevent empty input field */
   const handleSubmit = e => {
     e.preventDefault();
+    setErrorMsg("");
+    if(inputValue.trim() === ""){
+      setErrorMsg("Task can not be empty");
+      return;
+    }
+    setTodos([...todos, { todoText: inputValue, todoId: uuidv4() }]);
+    setInputValue("");
+  };
+
+  /* removing tasks */
+  const removeTodo = (id) => {
+    setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
   /*** LOGIN SYSTEM  ***/
@@ -111,7 +126,7 @@ function App() {
               <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/tasks">
-              <Tasks />
+              <Tasks handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />
