@@ -4,10 +4,11 @@ const TodoItem = ({todos, removeTodo}) => {
     return(
         <>
         {todos.map(todoItem => (
-            <div key={todoItem.todoId} className="todoItem">
-                <p>{todoItem.todoText}</p>
-                <span onclick={() => removeTodo(todoItem.todoId)}>X</span>
-            </div>
+                <div key={todoItem.todoId} className="todoItem">
+                    <div className="decorline"></div>
+                    <span className="check" onClick={() => removeTodo(todoItem.todoId)}>X</span>
+                    <p>{todoItem.todoText}</p>
+                </div>
         ))}
         </>
     );

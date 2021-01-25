@@ -34,7 +34,7 @@ function App() {
 
   /* removing tasks */
   const removeTodo = (id) => {
-    setTodos(todos.filter(todoItem) => todoItem.todoId !== id));
+    setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
   /*** LOGIN SYSTEM  ***/
