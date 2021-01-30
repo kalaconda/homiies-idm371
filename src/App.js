@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
-import "../css/App.css";
+import "./css/App.css";
 
 
 function App() {
