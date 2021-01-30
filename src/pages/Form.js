@@ -10,7 +10,7 @@ const Form = ({inputValue, setInputValue, handleSubmit}) => {
             type="text" 
             placeholder="Enter task..." 
             />
-            <button type="submit" className="addtask">+</button>
+            <button type="submit" className="addtask">+ Task</button>
         </form>
     )
 }

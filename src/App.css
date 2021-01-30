@@ -8,7 +8,7 @@ div.bottomnav {
   -webkit-box-shadow: 0 0 10px -3px #777;
      -moz-box-shadow: 0 0 10px -3px #777;
           box-shadow: 0 0 10px -3px #777;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.877);
   width: 100%;
   height: 70px;
   position: fixed;
@@ -93,6 +93,7 @@ div.topnav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
 }
 
 /* TODO LIST */
@@ -235,14 +236,13 @@ button.loginbtn {
 
 button.addtask {
   background-color: #242C6A;
-  border-radius: 50%;
+  border-radius: 16px;
   color: #DFEFE4;
   font-size: 20px;
-  font-weight: bold;
   outline: none;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 85px;
+  height: 40px;
 }
 
 /* fonts */
@@ -263,3 +263,4 @@ button.addtask {
     font-style: normal;
 
 }
+
