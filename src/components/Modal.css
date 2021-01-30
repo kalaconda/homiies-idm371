@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-wrapper {
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+.modal-header {
+    padding: 1rem;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.modal-header span {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content {
+    padding-top: 1rem; 
+    padding-bottom: 1rem; 
+}
+
+.modal-body {
+    margin-bottom: 1rem;
+}
+
+.modal-body h4 {
+    font-size: 18px;
+    color: black;
+}
+
+.modal-body p {
+    font-size: 18px;
+}
+
+.modal-footer button{
+    font-family: 'ubuntubold';
+    background-color: #F14F5E;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    display: block;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.btn-openModal {
+    background-color: #242C6A;
+    border-radius: 16px;
+    color: #DFEFE4;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    width: 85px;
+    height: 40px;
+}

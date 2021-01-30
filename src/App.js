@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import fire from "./components/fire";
-import { Modal } from "./components/modal/Modal";
+import Modal from "./components/Modal";
 import { v4 as uuidv4 } from 'uuid';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -37,6 +37,13 @@ function App() {
   const removeTodo = (id) => {
     setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
+
+  /*** MODAL COMPONENT ***/
+
+  /* show modal */
+  const [show,setShow] = useState(false);
+  /* close modal */
+  const closeModalHandler = () => setShow(false);
 
   /*** LOGIN SYSTEM  ***/
   const [user, setUser] = useState("");
