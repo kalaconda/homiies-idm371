@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
-import "./App.css";
+import "../css/App.css";
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
   /*** MODAL COMPONENT ***/
 
   /* show modal */
-  const [show,setShow] = useState(false);
+  const [show, setShow] = useState(false);
   /* close modal */
   const closeModalHandler = () => setShow(false);
 
