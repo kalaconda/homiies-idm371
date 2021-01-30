@@ -3,12 +3,13 @@ import NB from "./NavBar";
 import Form from './Form';
 import TodoItem from "./TodoItem";
 import logo60x60 from '../images/icon60x60.png';
+import Modal from "../components/Modal";
 
 /*
   add, display, complete, filter, and delete todos
 */
 
-const Tasks = ({inputValue, setInputValue, handleSubmit, todos, errorMsg, removeTodo}) => {
+const Tasks = ({show, setShow, closeModalHandler, inputValue, setInputValue, handleSubmit, todos, errorMsg, removeTodo}) => {
     return (
       <div className="App">
       <div className="white">
@@ -24,9 +25,11 @@ const Tasks = ({inputValue, setInputValue, handleSubmit, todos, errorMsg, remove
             <div class="yellowline"></div>
             <h3>Tasks</h3>
           </div>
+          <button onClick={() => setShow(true)} className="btn-openModal">+ Task</button>
+          {/* pop up modal for add task */}
+          <Modal show={show} closeModalHandler={closeModalHandler}/>
           {/*<p className="errorMsg">{errorMsg}</p>*/}
           <TodoItem removeTodo={removeTodo} todos={todos} />
-          <Modal />
       </div>
       <NB />
     </div>
