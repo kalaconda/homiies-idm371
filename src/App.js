@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import fire from "./components/fire";
+import { Modal } from "./components/modal/Modal";
 import { v4 as uuidv4 } from 'uuid';
 import Login from "./pages/Login";
 import Home from "./pages/Home";

@@ -24,8 +24,9 @@ const Tasks = ({inputValue, setInputValue, handleSubmit, todos, errorMsg, remove
             <div class="yellowline"></div>
             <h3>Tasks</h3>
           </div>
-        {/*<p className="errorMsg">{errorMsg}</p>*/}
-        <TodoItem removeTodo={removeTodo} todos={todos} />
+          {/*<p className="errorMsg">{errorMsg}</p>*/}
+          <TodoItem removeTodo={removeTodo} todos={todos} />
+          <Modal />
       </div>
       <NB />
     </div>
