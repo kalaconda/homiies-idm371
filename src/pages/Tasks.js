@@ -21,7 +21,7 @@ const Tasks = ({show, setShow, closeModalHandler, inputValue, setInputValue, han
           </div>
           <button onClick={() => setShow(true)} className="btn-openModal">+ Task</button>
           {/* pop up modal for add task */}
-          <Modal show={show} closeModalHandler={closeModalHandler} setInputValue={setInputValue} />
+          <Modal show={show} closeModalHandler={closeModalHandler} inputValue={inputValue} setInputValue={setInputValue} handleSubmit={handleSubmit} />
           {/*<p className="errorMsg">{errorMsg}</p>*/}
           <TodoItem removeTodo={removeTodo} todos={todos} />
       </div>
