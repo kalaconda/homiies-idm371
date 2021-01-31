@@ -9,7 +9,6 @@ import Tasks from "./pages/Tasks";
 import TodoItem from "./pages/TodoItem";
 import "../App.css";
 
-
 function App() {
 
   /*** TODO LIST  ***/
