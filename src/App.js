@@ -6,10 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
-import Form from "./pages/Form";
 import TodoItem from "./pages/TodoItem";
-import "./css/App.css";
-
+import "../App.css";
 
 function App() {
 
@@ -134,7 +132,7 @@ function App() {
               <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/tasks">
-              <Tasks handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
+              <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
             </Route>
             <Route exact path="/payment">
               <Home handleLogOut={handleLogOut} />
