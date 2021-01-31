@@ -7,7 +7,8 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import TodoItem from "./pages/TodoItem";
-import "../App.css";
+import "./App.css";
+
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       setErrorMsg("Task can not be empty");
       return;
     }
+    /* get value of todos that are submitted in input field */
     setTodos([...todos, { todoText: inputValue, todoId: uuidv4() }]);
     setInputValue("");
   };

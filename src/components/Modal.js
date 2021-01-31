@@ -1,14 +1,13 @@
 import React from "react";
-import "../Modal.css";
 import { BiArrowBack } from 'react-icons/bi';
 import plus_button from '../images/plus_button.png';
+import "../Modal.css";
 
 const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmit }) => {
     return (
         <div className="modal-wrapper"
         style={{
             opacity: show ? '1' : '0'
-            zIndex: isOpen ? '1' : '-1'
         }}
         >
             <div className="modal-header">
@@ -16,10 +15,6 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
             </div>
             <div className="modal-content">
                 <div className="modal-body">
-                    
-                </div>
-                <div className="modal-footer">
-                    <button className="btn-cancel">Set Task</button>
                 {/* get input value and add todo */}
                 <form onSubmit={handleSubmit}>
                     <input 
