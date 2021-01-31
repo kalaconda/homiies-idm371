@@ -1,6 +1,5 @@
 import React from 'react';
 import NB from "./NavBar"; 
-import Form from './Form';
 import TodoItem from "./TodoItem";
 import logo60x60 from '../images/icon60x60.png';
 import Modal from "../components/Modal";
@@ -16,18 +15,13 @@ const Tasks = ({show, setShow, closeModalHandler, inputValue, setInputValue, han
         <div className="topnav">
           <img src={logo60x60} className="App-logo2" alt="logo" />
         </div>
-        <Form 
-          handleSubmit={handleSubmit} 
-          inputValue= {inputValue} 
-          setInputValue= {setInputValue} 
-          />
           <div className="heading">
             <div class="yellowline"></div>
             <h3>Tasks</h3>
           </div>
           <button onClick={() => setShow(true)} className="btn-openModal">+ Task</button>
           {/* pop up modal for add task */}
-          <Modal show={show} closeModalHandler={closeModalHandler}/>
+          <Modal show={show} closeModalHandler={closeModalHandler} setInputValue={setInputValue} />
           {/*<p className="errorMsg">{errorMsg}</p>*/}
           <TodoItem removeTodo={removeTodo} todos={todos} />
       </div>

@@ -93,7 +93,7 @@ div.topnav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 /* TODO LIST */
@@ -190,10 +190,6 @@ div.yellowline {
   overflow: hidden;
 }
 
-form {
-  padding: 1.5rem 1rem;
-}
-
 /* align labels + inputs to left */
 .inputs {
   text-align: left;
@@ -208,10 +204,9 @@ form {
 /* input box */
 input {
   outline: none;
-  border-top: none;
-  border-bottom: 3px solid #F6A417;
-  border-left: none;
-  border-right: none;
+  border: none;
+  background-color: #EDEFFA;
+  padding: 15px 10px;
 }
 
 input[type=text] {

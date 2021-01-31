@@ -1,23 +1,69 @@
 import React from "react";
-import "../css/Modal.css";
+import "../Modal.css";
+import { BiArrowBack } from 'react-icons/bi';
+import plus_button from '../images/plus_button.png';
 
-const Modal = ({ show, closeModalHandler, }) => {
+const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmit }) => {
     return (
         <div className="modal-wrapper"
         style={{
             opacity: show ? '1' : '0'
+            zIndex: isOpen ? '1' : '-1'
         }}
         >
             <div className="modal-header">
-                <span className="close-modal-btn">back arrow</span>
+                <span onClick={closeModalHandler} className="close-modal-btn"><BiArrowBack/></span>
             </div>
             <div className="modal-content">
                 <div className="modal-body">
-                    <h4>Modal</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
                 </div>
                 <div className="modal-footer">
                     <button className="btn-cancel">Set Task</button>
+                {/* get input value and add todo */}
+                <form onSubmit={handleSubmit}>
+                    <input 
+                    value= {inputValue} 
+                    onChange= {e => setInputValue(e.target.value)} 
+                    type="text" 
+                    placeholder="Enter task..." 
+                    />
+                    <button type="submit" className="btn-cancel">Set Task</button>
+                </form>
+                    <div className="task-options">
+                        <ul>
+                            <li>
+                                    <p id="column1">Take out trash</p>
+                                    <img src={plus_button} id="plusbutton" alt="" />
+                            </li>
+                            <li>
+                                    <p id="column1" >Clean the floors</p>
+                                    <img src={plus_button} id="plusbutton" alt="" />
+                            </li>
+                            <li>
+                                    <p id="column1">Wash dishes</p>
+                                    <img src={plus_button} id="plusbutton" alt="" />
+                            </li>
+                            <li>
+                                    <p id="column1">Empty Dishwasher</p>
+                                    <img src={plus_button} id="plusbutton" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr></hr>
+
+                        <h3>Deadline</h3>
+
+                        <p> Range of Days </p>
+
+                        <p> Repeat </p>
+
+                        <h3>Assigned to</h3>
+
+                        <p> Rotation </p>
+
+                        <h3>Effort Level</h3>
                 </div>
             </div>
         </div>
