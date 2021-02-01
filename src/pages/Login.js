@@ -26,6 +26,7 @@ const Login = (props) => {
             <div className="inputs">
               <label htmlFor="name">Your Email</label>
               <input
+                className="logininput"
                 type="text"
                 required
                 autoFocus
@@ -39,6 +40,7 @@ const Login = (props) => {
               <p className="errorMsg">{emailError}</p>
               <label htmlFor="pass">Set Password</label>
                 <input
+                  className="logininput"
                   type="password"
                   required
                   value={password}
@@ -51,7 +53,7 @@ const Login = (props) => {
             <div className="btnContainer">
               {hasAccount ? (
                 <>
-                  <button className="loginbtn" onClick={handleLogin}>Sign In</button>
+                  <button className="pinkbtn" onClick={handleLogin}>Sign In</button>
 
                   <p>
                     Don't have a account?
@@ -60,10 +62,10 @@ const Login = (props) => {
                 </>
               ) : (
                 <>
-                  <button className="loginbtn" onClick={handleSignup}>Continue</button>
+                  <button className="pinkbtn" onClick={handleSignup}>Continue</button>
               
                   <p>
-                    Have and account?
+                    Have an account?
                     <span onClick={() => setHasAccount(!hasAccount)}> Sign in</span>
                   </p>
                 </>

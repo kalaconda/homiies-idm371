@@ -18,13 +18,13 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                 {/* get input value and add todo */}
                 <form onSubmit={handleSubmit}>
                     <input 
+                    className="settaskinput"
                     value= {inputValue} 
                     onChange= {e => setInputValue(e.target.value)} 
                     type="text" 
                     placeholder="Enter task..." 
                     />
-                    <button type="submit" className="btn-cancel">Set Task</button>
-                </form>
+            
                     <div className="task-options">
                         <ul>
                             <li>
@@ -46,19 +46,12 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                         </ul>
                     </div>
 
+                    <button type="submit" className="btn-cancel">Set Task</button>
+                    
+                    </form>
+                    
                     <hr></hr>
 
-                        <h3>Deadline</h3>
-
-                        <p> Range of Days </p>
-
-                        <p> Repeat </p>
-
-                        <h3>Assigned to</h3>
-
-                        <p> Rotation </p>
-
-                        <h3>Effort Level</h3>
                 </div>
             </div>
         </div>

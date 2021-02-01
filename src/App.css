@@ -183,17 +183,22 @@ div.yellowline {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  padding: 1.5rem;
 }
 
 /* align labels + inputs to left */
 .inputs {
+  display: inline-flex;
+  flex-direction: column;
+  margin: .8rem;
+}
+
+.inputs label {
   text-align: left;
-  margin: 0 auto;
+  margin: 1rem 0;
 }
 
 /* text */
@@ -202,11 +207,20 @@ div.yellowline {
 }
 
 /* input box */
-input {
+input.settaskinput {
   outline: none;
   border: none;
   background-color: #EDEFFA;
   padding: 15px 10px;
+}
+
+input.logininput {
+  background-color: none;
+  outline: none;
+  border-top: none;
+  border-bottom: 3px solid #F6A417;
+  border-left: none;
+  border-right: none;
 }
 
 input[type=text] {
@@ -218,26 +232,17 @@ input[type=password] {
 }
 
 /* Buttons */
-button.loginbtn {
+button.pinkbtn {
   font-family: 'ubuntubold';
   font-size: 18px;
   background-color: #F14F5E;
   color: white;
+  cursor: pointer;
   border-radius: 50px;
   outline: none;
   border: none;
   padding: 15px 40px;
-}
-
-button.addtask {
-  background-color: #242C6A;
-  border-radius: 16px;
-  color: #DFEFE4;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  width: 85px;
-  height: 40px;
+  margin: 1.5rem;
 }
 
 /* fonts */
