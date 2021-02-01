@@ -8,7 +8,11 @@
 .modal-wrapper {
     background-color: #fff;
     width: 100%;
-    margin: 4rem auto;
+    /* commented out due to css issue with modal */
+    /*
+    position: absolute;
+    margin: 10.5rem auto;
+    z-index: 1;*/
 }
 
 .modal-header {
@@ -56,20 +60,30 @@ button.btn-cancel {
 }
 
 .btn-openModal {
-    background-color: #242C6A;
-    border-radius: 16px;
-    color: #DFEFE4;
+    font-family: 'ubuntubold';
+    font-size: 18px;
+    background-color: #F14F5E;
+    color: white;
     cursor: pointer;
-    font-size: 20px;
+    border-radius: 50px;
     outline: none;
     border: none;
-    width: 85px;
-    height: 40px;
+    padding: 10px 20px;
+    margin: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* commented out due to css issue with modal */
+    /*position: absolute;
+    right:    0;
+    bottom:   30%;*/
 }
 
 img#plusbutton {
     width: 20px;
     height: 20px;
+}
+
+.task-options {
+    margin: 1.5rem 0;
 }
 
 ul {
