@@ -8,6 +8,7 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
         <div className="modal-wrapper"
         style={{
             opacity: show ? '1' : '0'
+            zIndex: !isOpen && "-1"
         }}
         >
             <div className="modal-header">
