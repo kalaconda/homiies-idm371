@@ -133,6 +133,12 @@ function App() {
       <Router>
         {user ? (
           <>
+            <Route exact path="/">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
+            <Route exact path="/home">
+              <Home handleLogOut={handleLogOut} />
+            </Route>
             <Route exact path="/tasks">
               <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
             </Route>
