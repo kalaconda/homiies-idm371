@@ -1,5 +1,5 @@
 import React from "react";
-import logo60x60 from '../images/icon60x60.png';
+import NB from "./NavBar"; 
 
 const Login = (props) => {
 
@@ -18,9 +18,7 @@ const Login = (props) => {
 
     return (
     <section className="login">
-      <div className="topnav">
-        <img src={logo60x60} className="App-logo2" alt="logo" />
-        </div>
+      <NB />
           <div className="loginContainer">
 
             <div className="inputs">

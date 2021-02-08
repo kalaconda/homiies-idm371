@@ -38,6 +38,12 @@ function App() {
     setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
+  /*** SAVING USER DATA W/ FIRESTORE 
+  db.collection("users").doc(user.uid).collection("todos").add({
+    task: todoText,
+    completed: completed,
+  });***/
+
   /*** MODAL COMPONENT ***/
 
   /* show modal */
@@ -127,17 +133,8 @@ function App() {
       <Router>
         {user ? (
           <>
-            <Route exact path="/">
-              <Home handleLogOut={handleLogOut} />
-            </Route>
-            <Route exact path="/home">
-              <Home handleLogOut={handleLogOut} />
-            </Route>
             <Route exact path="/tasks">
               <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
-            </Route>
-            <Route exact path="/payment">
-              <Home handleLogOut={handleLogOut} />
             </Route>
             <Route exact path="/notifications">
               <Home handleLogOut={handleLogOut} />
