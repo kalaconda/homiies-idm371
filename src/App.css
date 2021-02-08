@@ -3,59 +3,10 @@
   text-align: center;
 }
 
-/* bottom nav */
-div.bottomnav {
-  -webkit-box-shadow: 0 0 10px -3px #777;
-     -moz-box-shadow: 0 0 10px -3px #777;
-          box-shadow: 0 0 10px -3px #777;
-  background-color: rgba(255, 255, 255, 0.877);
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  font-family: 'ubuntubold';
-  bottom: 0;
-}
-
-ul.navcontent {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 18px;
-}
-
-li.nav-text {
-  flex-direction: column;
-  list-style: none;
-  text-decoration: none;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* top nav */
-div.topnav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #242C6A;
-  overflow: hidden;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  top: 0;
-  width: 100%;
-}
-
-/* top nav logo */
-.App-logo2 {
-  height: 10vmin;
-  pointer-events: none;
-  padding: 5px 5px;
-}
-
-/* app logo */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  padding: 30px 30px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -77,18 +28,6 @@ div.topnav {
   }
 }
 
-/* bgs */
-.purple {
-  background-color: #242C6A;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  overflow: hidden;
-}
-
 .white {
   display: flex;
   flex-direction: column;
@@ -97,6 +36,12 @@ div.topnav {
 }
 
 /* TODO LIST */
+.togglefilter {
+  width: 100%;
+  padding: 40px 30px;
+  border-bottom: 1px solid #bbbbbb;
+}
+
 span.check {
   color: #242C6A;
   font-weight: bold;
@@ -114,7 +59,8 @@ div.todoItem {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  /*z-index: -2;*/
 }
 
 /* the purple line decoration on the tasks */
@@ -125,6 +71,7 @@ div.decorline {
   width: 15px;
   position: absolute;
   left: 17px;
+  /*z-index: -1;*/
 }
 
 /* links */
@@ -159,23 +106,19 @@ h2 {
   margin: 0;
 }
 
+.taskwelcome {
+  text-align: left;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+h2.taskwelcometxt {
+  font-size: 35px;
+  color: #242C6A;
+}
+
 h3 {
   font-size: 18px;
-  padding: 10px;
-}
-
-/* h3 heading on task page */
-div.heading {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* content for div heading */
-div.yellowline {
-  background-color: #F7D720;
-  height: 20px;
-  width: 10px;
 }
 
 /* login */
@@ -206,13 +149,6 @@ div.yellowline {
   font-size: 18px;
 }
 
-/* input box */
-input.settaskinput {
-  outline: none;
-  border: none;
-  background-color: #EDEFFA;
-  padding: 15px 10px;
-}
 
 input.logininput {
   background-color: none;
@@ -233,8 +169,8 @@ input[type=password] {
 
 /* Buttons */
 button.pinkbtn {
-  font-family: 'ubuntubold';
   font-size: 18px;
+  font-family: 'ubuntubold';
   background-color: #F14F5E;
   color: white;
   cursor: pointer;
