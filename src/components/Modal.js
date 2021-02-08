@@ -6,10 +6,6 @@ import "../Modal.css";
 const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmit }) => {
     return (
         <div className="modal-wrapper"
-        style={{
-            opacity: show ? '1' : '0'
-            zIndex: !isOpen && "-1"
-        }}
         >
             <div className="modal-header">
                 <span onClick={closeModalHandler} className="close-modal-btn"><BiArrowBack/></span>
@@ -47,11 +43,61 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                         </ul>
                     </div>
 
+                    <hr></hr>
+
+                    {/* Effort Level */}
+
+                    <div className="effortcontainer">
+                        <h3 className="modalheading">Effort Level</h3>
+                        <div className="effort">
+                            <div className="effort-toggle">
+                                <div className="toggle-wrapper">
+                                </div>
+                            </div>
+
+                            <select className="effort-dropdown">
+                                <option value="Daily">Simple</option>
+                                <option value="Weekly">Medium</option>
+                                <option value="Bi-Weekly">Difficult</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    {/* Completed By */}
+
+                    <div className="datecontainer">
+                        <h3 className="modalheading">Completed By</h3>
+                        <form action="date" class="deadline-form">
+                            <input type="date" name="deadline" />
+                        </form>
+                    </div>
+                    
+                    <hr></hr>
+                    
+                    <div class="repeatcontainer">
+                            <h3 className="modalheading2">Repeat</h3>
+                                <div class="toggle-wrapper">
+                                    <input id="toggle-1" type="checkbox"/>
+                                    <label for="toggle-1">Select</label>
+                                </div>
+                    </div>
+
+                    <div class="repeatcontainer">
+                            <h3 className="modalheading2">Rotation</h3>
+                                <div class="toggle-wrapper">
+                                    <input id="toggle-2" type="checkbox"/>
+                                    <label for="toggle-2">Select</label>
+                                </div>
+                    </div>
+
+                    {/* Set Task */}
                     <button type="submit" className="btn-cancel">Set Task</button>
                     
                     </form>
                     
-                    <hr></hr>
 
                 </div>
             </div>
