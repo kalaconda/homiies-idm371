@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import TodoItem from "./pages/TodoItem";
 import "./App.css";
+import Obj from "./components/fire";
 
 
 function App() {
@@ -38,11 +39,12 @@ function App() {
     setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
-  /*** SAVING USER DATA W/ FIRESTORE 
-  db.collection("users").doc(user.uid).collection("todos").add({
-    task: todoText,
-    completed: completed,
-  });***/
+  /*** SAVING USER DATA W/ FIRESTORE ***/
+  const { db, auth } = Obj;
+
+  db.collection("todos").add({
+    todo: "test"
+  });
 
   /*** MODAL COMPONENT ***/
 
