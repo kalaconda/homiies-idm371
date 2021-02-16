@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import fire from "./components/fire";
 import Modal from "./components/Modal";
@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import TodoItem from "./pages/TodoItem";
+import Insights from "./pages/Insights";
 import "./App.css";
 import Obj from "./components/fire";
 
@@ -29,22 +30,21 @@ function App() {
       setErrorMsg("Task can not be empty");
       return;
     }
-    /* get value of todos that are submitted in input field */
+  /* get value of todos that are submitted in input field */
     setTodos([...todos, { todoText: inputValue, todoId: uuidv4() }]);
     setInputValue("");
   };
-
   /* removing tasks */
   const removeTodo = (id) => {
     setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
-  /*** SAVING USER DATA W/ FIRESTORE ***/
+  /*** SAVING USER DATA W/ FIRESTORE  
   const { db, auth } = Obj;
 
   db.collection("todos").add({
     todo: "test"
-  });
+  }); ***/
 
   /*** MODAL COMPONENT ***/
 
@@ -144,8 +144,8 @@ function App() {
             <Route exact path="/tasks">
               <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
             </Route>
-            <Route exact path="/notifications">
-              <Home handleLogOut={handleLogOut} />
+            <Route exact path="/insights">
+              <Insights closeModalHandler={closeModalHandler} setShow={setShow} show={show} inputValue={inputValue} setInputValue={setInputValue} />
             </Route>
           </>
         ) : (

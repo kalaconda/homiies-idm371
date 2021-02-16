@@ -70,8 +70,8 @@ button.btn-cancel {
 }
 
 .btn-openModal {
-    font-family: 'ubuntubold';
-    font-size: 18px;
+    font-family: 'ubunturegular';
+    font-size: 22px;
     background-color: #F14F5E;
     color: white;
     cursor: pointer;
@@ -81,7 +81,7 @@ button.btn-cancel {
     padding: 10px 20px;
     margin: 1.5rem;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    position: absolute;
+    position: fixed;
     right:    0;
     bottom:   1%;
 }
@@ -223,5 +223,4 @@ hr {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     bottom: 0;
-
 }
