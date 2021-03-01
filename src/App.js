@@ -1,16 +1,12 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import fire from "./components/fire";
-import Modal from "./components/Modal";
 import { v4 as uuidv4 } from 'uuid';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
-import TodoItem from "./pages/TodoItem";
 import Insights from "./pages/Insights";
 import "./App.css";
-import Obj from "./components/fire";
-
+import { db, auth } from './components/fire';
 
 function App() {
 
@@ -39,12 +35,13 @@ function App() {
     setTodos(todos.filter((todoItem) => todoItem.todoId !== id)); 
   }
 
-  /*** SAVING USER DATA W/ FIRESTORE  
-  const { db, auth } = Obj;
+  /*** SAVING DATA ***/
 
-  db.collection("todos").add({
-    todo: "test"
-  }); ***/
+  const data = {
+    task: "todoText",
+    completed: "completed"
+  };
+
 
   /*** MODAL COMPONENT ***/
 
@@ -73,9 +70,7 @@ function App() {
 
   const handleLogin = () => {
     clearErrors();
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
+      auth.signInWithEmailAndPassword(email, password)
       .catch((err) => {
         switch (err.code) {
           case "auth/invalid-email":
@@ -93,9 +88,7 @@ function App() {
 
   const handleSignup = () => {
     clearErrors();
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
+      auth.createUserWithEmailAndPassword(email, password)
       .catch((err) => {
         switch (err.code) {
           case "auth/email-already-in-use":
@@ -110,12 +103,8 @@ function App() {
       });
   };
 
-  function handleLogOut() {
-    fire.auth().signOut();
-  }
-
   const authListener = () => {
-    fire.auth().onAuthStateChanged((user) => {
+    auth.onAuthStateChanged((user) => {
       clearInputs();
       if (user) {
         setUser(user);
@@ -125,9 +114,30 @@ function App() {
     });
   };
 
+  const handleLogOut = () => {
+    auth.signOut().then(() => {
+      console.log("signout successful")
+    }).catch(err => {
+      console.log(err, "auth error")
+    });
+  }
+
   useEffect(() => {
     authListener();
   }, []);
+
+  useEffect( () => { 
+   db.collection("users").doc(user.uid).collection("todos").add(data).then((docRef) => {
+      this.myListOfItems.push(data);
+      this.$store.items.add(data)
+      console.log("Document written with ID: ", docRef.id);
+    })
+  .catch((error) => {
+      console.error("Error adding document: ", error);
+    });
+  }, [])
+
+  console.log(user)
 
   /*** REACT ROUTER / NAVIGATION  ***/
   return (
