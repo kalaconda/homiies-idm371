@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";
 import Insights from "./pages/Insights";
+import Recent from "./pages/Recent";
 import "./App.css";
 import { db, auth } from './components/fire';
 
@@ -156,6 +157,9 @@ function App() {
             </Route>
             <Route exact path="/insights">
               <Insights closeModalHandler={closeModalHandler} setShow={setShow} show={show} inputValue={inputValue} setInputValue={setInputValue} />
+            </Route>
+            <Route exact path="/recent">
+              <Recent closeModalHandler={closeModalHandler} setShow={setShow} show={show} inputValue={inputValue} setInputValue={setInputValue} />
             </Route>
           </>
         ) : (
