@@ -1,0 +1,248 @@
+@font-face{
+    font-family: light;
+    src: url(fonts/AirbnbCerealLight.woff) format('woff');
+}
+@font-face{
+    font-family: book;
+    src: url(fonts/AirbnbCerealBook.woff) format('woff');
+}
+@font-face{
+    font-family: medium;
+    src: url(fonts/AirbnbCerealMedium.woff) format('woff');
+}
+@font-face{
+    font-family: bold;
+    src: url(fonts/AirbnbCerealBold.woff) format('woff');
+}
+
+:root{
+    --blue: #242C6A;
+    --pink: #F14F5E;
+    --yellow: #F7D720;
+    --orange: #F6A417;
+    --palegreen: #DFEFE4;
+    --palepurple: #F1F3FF;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font: airbnbcereal;
+    display: block;
+}
+
+title{
+    display: none;
+}
+
+.head-bar{
+    background-color: var(--blue);
+    height: 54px;
+    width: 100%;
+}
+
+/**Notification Content**/
+.notification-content{
+    width: 50%;
+}
+.notification-tile{
+    border-bottom: .3px solid black;
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+.notification-tile header{
+    font-size: 1rem;
+    font-family: medium;
+}
+.notification-tile p{
+    margin: .5rem 0 0 0;
+}
+.notification-tile .info{
+    font-family: light;
+    font-size: 1rem;
+}
+.time{
+    font-family: light;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/**Notification Button**/
+.notification-button{
+    width: 50%;
+    text-align: center;
+}
+.notification-button-style{
+    background-color: var(--pink);
+    border: none;
+    border-radius: 10px;
+    font-family: light;
+    font-size: 1rem;
+    padding: .25rem 1rem;
+    color: white;
+    margin: auto;
+}
+
+/**Flex Display **/
+.notification-tile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/** Recent Page **/
+
+    /** top of page **/
+    .homescreen-top{
+        margin: 1.5rem;
+    }
+    .homescreen-top header{
+        font-family: bold;
+        font-size: 2rem;
+        color: var(--blue);
+    }
+    .homescreen-top p{
+        font-family: medium;
+        font-size: 1rem;
+        color: var(--blue);
+        padding-top: 1rem;
+        border-bottom: 2px solid lightgrey;
+    }
+
+.recent-tile{
+    background-color: var(--palepurple);
+    margin: 1rem;
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.recent-tile header{
+    font-family: light;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.recent-name{
+    font-family: medium;
+}
+.recent-reaction{
+    max-width: 20px;
+}
+.reactions button{
+    background-color: transparent;
+    border: none;
+    padding: .25rem;
+}
+.reactions{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  splashscreen  */
+.splash-screen{
+    background-color: var(--blue);
+    height: 100vh;
+    text-align: center;
+}
+.splash-screen-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+.splash-screen-center h1{
+    font-family: bold;
+    color: white;
+    font-size: 1.25;
+}
+.splash-screen-center p{
+    font-family: medium;
+    font-size: 1rem;
+    color: white;
+}
+.splash-screen-logo{
+    height: 80px;
+    margin: 0;
+}
+
+/*  onboarding screens */
+
+.onboarding-screens{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+.o-screen-2 h1, .o-screen-3 h1{
+    font: 1.5rem light;
+    text-align: center;
+    margin: 0 0 3rem;
+}
+.o-screen-1 p, .o-screen-2 p, .o-screen-3 p{
+    font: 1rem light;
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+.o-screen-2 p:first-child, .o-screen-3 p:first-child{
+    margin-bottom: .5rem;
+}
+.o-screen-1 img{
+    display: block;
+    margin: .5rem auto 3rem;
+    height: 80px;
+    text-align: center;
+}
+.o-screen-1 label, .o-screen-2 label, .o-screen-3 label{
+    font: 1rem light;
+    text-align: left;
+}
+.o-screen-1 input, .o-screen-2 input, .o-screen-3 input{
+    margin: 1.5rem 0 2rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--orange);
+    font: 1.25rem light;
+}
+.o-screen-button-style-1{
+    background-color: var(--pink);
+    border: none;
+    border-radius: 20px;
+    font-family: medium;
+    font-size: 1.25rem;
+    padding: .5rem 1.25rem;
+    color: white;
+    margin: 5rem auto 0;
+}
+.o-screen-button-style-2{
+    background-color: transparent;
+    border: none;
+    font-family: light;
+    font-size: 1rem;
+    padding: .5rem 1.25rem;
+    color: var(--blue);
+    margin: 1rem auto 0;
+}
+.o-screen-button-style-3{
+    background-color: transparent;
+    border: none;
+    font-family: light;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+/* claim task functionality **/
+
+.task{
+    background-color: var(--palegreen);
+}
