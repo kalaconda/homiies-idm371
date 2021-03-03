@@ -35,6 +35,7 @@
   overflow-y: hidden;
   height: 100%;
   padding-bottom: 90px;
+  margin-top: 1.5rem;
 }
 
 /* TODO LIST */
@@ -253,7 +254,6 @@ input[type=password] {
   border-radius: 50px;
   font-size: 18px;
   font-family: 'ubuntubold';
-  margin: 1.5rem;
   bottom: 0;
   outline: none;
   padding: 15px 40px;
@@ -469,3 +469,22 @@ input[type=password] {
 
 }
 
+@font-face{
+  font-family: 'light';
+  src: url(fonts/AirbnbCerealLight.woff) format('woff');
+}
+
+@font-face{
+  font-family: 'book';
+  src: url(fonts/AirbnbCerealBook.woff) format('woff');
+}
+
+@font-face{
+  font-family: 'medium';
+  src: url(fonts/AirbnbCerealMedium.woff) format('woff');
+}
+
+@font-face{
+  font-family: 'bold';
+  src: url(fonts/AirbnbCerealBold.woff) format('woff');
+}

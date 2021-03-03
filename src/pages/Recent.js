@@ -1,8 +1,9 @@
 import React from 'react';
 import NB from "./NavBar"; 
-import TodoItem from "./TodoItem";
 import Modal from "../components/Modal";
 import { Link } from 'react-router-dom';
+import emoji from '../images/emoji.jpg';
+import comment from '../images/comment.jpg';
 
 /*
   add, display, complete, filter, and delete todos
@@ -27,6 +28,17 @@ const Recent = ({show, setShow, closeModalHandler, inputValue, setInputValue }) 
               <h3> Insights </h3>
             </Link>
           </ul>
+
+      <div className="recent-tile">
+        <div className="content">
+            <header><b class="recent-name">Mikayla</b> completed 'Take out the Trash'</header>
+            <p class="time">47min ago</p>
+      </div>
+      <div className="reactions">
+                <button><img className="recent-reaction" src={emoji} alt="add emoji reaction"/></button>
+                <button><img className="recent-reaction" src={comment} alt="add comment"/></button>
+        </div> 
+      </div>
 
           <button onClick={() => setShow(true)} className="btn-openModal">+ Task</button>
           {/* pop up modal for add task */}
