@@ -32,7 +32,7 @@ const Recent = ({show, setShow, closeModalHandler, inputValue, setInputValue }) 
       <div className="recent-tile">
         <div className="content">
             <header><b class="recent-name">Mikayla</b> completed 'Take out the Trash'</header>
-            <p class="time">47min ago</p>
+            <p className="time">47min ago</p>
       </div>
       <div className="reactions">
                 <button><img className="recent-reaction" src={emoji} alt="add emoji reaction"/></button>
