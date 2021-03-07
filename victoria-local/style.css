@@ -203,22 +203,23 @@ title{
     text-align: center;
 }
 .o-screen-1 label, .o-screen-2 label, .o-screen-3 label{
-    font: 1rem light;
-    text-align: left;
+    font: .8rem bold;
 }
 .o-screen-1 input, .o-screen-2 input, .o-screen-3 input{
-    margin: 1.5rem 0 2rem;
+    margin: 1.25rem 0 2rem;
     width: 100%;
-    border: none;
-    border-bottom: 2px solid var(--orange);
+    border: .5px solid var(--blue);
+    /*border-bottom: 2px solid var(--orange);**/
     font: 1.25rem light;
+    border-radius: 5px;
+    padding: .3rem .5rem;
 }
 .o-screen-button-style-1{
     background-color: var(--pink);
     border: none;
     border-radius: 20px;
-    font-family: medium;
-    font-size: 1.25rem;
+    font-family: light;
+    font-size: 1rem;
     padding: .5rem 1.25rem;
     color: white;
     margin: 5rem auto 0;
@@ -233,12 +234,17 @@ title{
     margin: 1rem auto 0;
 }
 .o-screen-button-style-3{
-    background-color: transparent;
+    background-color: var(--palepurple);
     border: none;
     font-family: light;
-    font-size: 1.5rem;
-    padding: 0;
+    font-size: 1rem;
+    padding: .5rem;
     margin-top: .5rem;
+    text-align: center;
+    width: 100%;
+}
+#o-screen-2-p{
+    text-align: left;
 }
 
 /* claim task functionality **/
