@@ -249,6 +249,13 @@ title{
 
 /* claim task functionality **/
 
-.task{
+#request{
+    border: .5px solid var(--blue);
+    height: 150px; 
+}
+
+#task{
     background-color: var(--palegreen);
+    height: 150px;
+    width: 100%;
 }

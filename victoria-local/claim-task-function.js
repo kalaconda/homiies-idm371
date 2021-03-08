@@ -11,11 +11,22 @@
     NAME.className="task"
     
     } */
+    var btn = document.getElementById('claim-btn') 
 
-    document.getElementById("request").classList.add('task');
+    btn.addEventListener(onclick, function changeClass(){
+        console.log(click)
+        document.getElementById("request").classList.add('task');
 
-    document.getElementById("request").classList.remove('request');
+        document.getElementById("request").classList.remove('request');
+    });
+
+    /*document.getElementById('claim-btn').onclick = function changeClass() {
+        
+        document.getElementById("request").classList.add('task');
+
+        document.getElementById("request").classList.remove('request');
     
     if ( document.getElementById("MyElement").classList.contains('MyClass') )
     
     document.getElementById("MyElement").classList.toggle('MyClass');
+    }**/
