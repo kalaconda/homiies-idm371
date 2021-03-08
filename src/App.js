@@ -44,9 +44,6 @@ function App() {
     completed: "completed"
   };
 
-  /*** AUTOCOMPLETE FEATURE ***/
-
-
   /*** MODAL COMPONENT ***/
 
   /* show modal */
@@ -159,7 +156,7 @@ function App() {
               <Onboarding2 />
             </Route>
             <Route exact path="/tasks">
-              <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo}/>
+              <Tasks closeModalHandler={closeModalHandler} setShow={setShow} show={show} handleSubmit={handleSubmit} todos={todos} inputValue={inputValue} setInputValue={setInputValue} removeTodo={removeTodo} />
             </Route>
             <Route exact path="/insights">
               <Insights closeModalHandler={closeModalHandler} setShow={setShow} show={show} inputValue={inputValue} setInputValue={setInputValue} />

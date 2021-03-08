@@ -5,8 +5,7 @@ import "../Modal.css";
 
 const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmit }) => {
     return (
-        <div className="modal-wrapper"
-        >
+        <div className="modal-wrapper">
             <div className="modal-header">
                 <span onClick={closeModalHandler} className="close-modal-btn"><BiArrowBack/></span>
             </div>
@@ -21,7 +20,8 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                     type="text" 
                     placeholder="Enter task..." 
                     />
-            
+
+
                     <div className="task-options">
                         <ul>
                             <li>
@@ -97,11 +97,9 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                     <button type="submit" className="btn-cancel">Set Task</button>
                     
                     </form>
-                    
-
+                    </div>
                 </div>
             </div>
-        </div>
     )
 }
 
