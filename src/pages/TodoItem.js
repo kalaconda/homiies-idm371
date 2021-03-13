@@ -1,5 +1,5 @@
 import React from 'react';
-import { BiDotsVerticalRounded } from 'react-icons/bi';
+import options from '../images/moreopt.png';
 import "../check-anim.css";
 
 const TodoItem = ({todos, removeTodo}) => {
@@ -24,8 +24,20 @@ const TodoItem = ({todos, removeTodo}) => {
                     </p>
                     </div>
 
-                    <span className="moreopt"><BiDotsVerticalRounded /></span>
-                
+                <div className="reactcontainer">
+                    <a href="#" className="extraopt-container">
+                        <img className="optionsbtn" src={options} alt="more options"/>
+                        <div className="options">
+                            <div id="optionitem1">
+                                Edit
+                            </div>
+                            <hr id="optionline"></hr>
+                            <div id="optionitem2" onClick={() => removeTodo(todoItem.todoId)}>
+                                Delete
+                            </div>
+                        </div>
+                    </a> 
+                </div>
                 </div>
                 
         ))}

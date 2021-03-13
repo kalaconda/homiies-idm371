@@ -21,18 +21,19 @@ const Tasks = ({show, setShow, closeModalHandler, inputValue, setInputValue, han
             Jennifer </h2>
           </div>
           <ul className="tasknav">
-            <Link to ="/recent" className="task-link">
+            <Link to ="/recent">
               <h3> Recent </h3>
             </Link>
             <Link to ="/tasks" className="task-link">
               <h3> Tasks </h3>
             </Link>
-            <Link to ="/insights" className="task-link">
+            <Link to ="/insights">
               <h3> Insights </h3>
             </Link>
           </ul>
 
           <div className="claimsection">
+            <p id="upforgrabs">Up For Grabs</p>
             <div className="requestitem">
               <div className="request-content">
                 <p>Clean Stove</p>

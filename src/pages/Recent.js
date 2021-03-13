@@ -23,10 +23,10 @@ const Recent = ({show, setShow, closeModalHandler, inputValue, setInputValue }) 
             <Link to ="/recent" className="task-link">
               <h3> Recent </h3>
             </Link>
-            <Link to ="/tasks" className="task-link">
+            <Link to ="/tasks">
               <h3> Tasks </h3>
             </Link>
-            <Link to ="/insights" className="task-link">
+            <Link to ="/insights">
               <h3> Insights </h3>
             </Link>
           </ul>

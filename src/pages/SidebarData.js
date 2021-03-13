@@ -4,7 +4,7 @@ import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
     {
-        title: "Getting Started",
+        title: "Logout",
         path: "/onboarding1",
         icon: <BsIcons.BsFillPersonFill />,
         cName: "nav-text"

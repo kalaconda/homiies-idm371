@@ -39,22 +39,32 @@
 }
 
 /* TODO LIST */
+p#upforgrabs {
+  font-family: 'bold';
+  padding: 20px 0 10px 0;
+  color: #242C6A;
+  margin-right: 13.5rem;
+}
+
 .claimsection {
   background-color: #F1F3FF;
   width: 100%;
-  height: 120px;
+  height: auto;
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .requestitem {
   display: flex;
+  flex-direction: row;
   font-family: 'ubunturegular';
   background-color: #FFFFFF;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+  border: 1px solid #C8CEF3;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.151);
   width: 85%;
   height: 87px;
   padding-left: 20px;
@@ -90,7 +100,7 @@ p#request-date {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   height: 30px;
   width: 100%;
 }
@@ -126,42 +136,10 @@ p#taskstog-1 {
   color: #242C6A;
   font-family: 'ubunturegular';
 }
-/*
-input.check {
-  color: #242C6A;
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
-}
-*/
-
-span.moreopt {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-left: 90%;
-  color: #FFA100;
-  font-size: 30px;
-}
-
-/*
-div.todoItem {
-  font-family: 'ubunturegular';
-  background-color: #EDEFFA;
-  border-radius: 10px;
-  width: 80%;
-  height: 87px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-*/
 
 /* task navigation */
 ul.tasknav {
-  height: 50px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -169,6 +147,10 @@ ul.tasknav {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.task-link {
+  border-bottom: 3.5px solid #242C6A;
 }
 
 .tasknav a {
@@ -270,6 +252,7 @@ h3 {
 
 .inputs label {
   text-align: left;
+  font-family:'bold';
   margin: 1rem 0;
 }
 
@@ -297,6 +280,7 @@ p#loginopt span {
 
 input.logininput {
   background-color: white;
+  border-radius: 4px;
   outline: none;
   border: 2px solid #868FC3;
   padding: 10px;
@@ -326,22 +310,21 @@ input[type=password] {
 }
 
 .logoutbtn {
-  background-color: #F14F5E;
-  border: none;
-  color: white;
+  position: absolute;
   cursor: pointer;
-  border-radius: 50px;
   font-size: 18px;
-  font-family: 'ubuntubold';
-  margin-top: 45%;
+  font-family: 'bold';
+  bottom: 0;
   outline: none;
-  padding: 15px 40px;
   z-index: -1;
+  transform: translate(-50%, -50%);
+  padding: 15px;
 }
 
 .claimbtn {
   border: none;
   background-color: #F14F5E;
+  border-radius: 2px;
   color: white;
   cursor: pointer;
   padding: 7px 25px;
@@ -424,6 +407,23 @@ span#closebtn {
   font-family: 'ubuntubold';
 }
 
+#effort1.insightalign svg {
+  color: #F7D720;
+}
+
+#effort2.insightalign svg {
+  color: #F14F5E;
+}
+
+#effort3.insightalign svg {
+  color: #242C6A;
+}
+
+#effort4.insightalign svg {
+  color: #DFEFE4
+}
+
+
 .insightcontent2 {
   display: flex;
   flex-direction: column;
@@ -437,14 +437,12 @@ span#closebtn {
 .insightcontent svg {
   height: 50px;
   width: 50px;
-  color: #242C6A;
   padding: 5px;
 }
 
 .insightcontent2 svg {
   height: 50px;
   width: 50px;
-  color: #242C6A;
   padding: 5px;
 }
 
@@ -527,14 +525,12 @@ span#closebtn {
 .insightcontent3 svg {
   height: 50px;
   width: 50px;
-  color: #242C6A;
   padding: 5px;
 }
 
 .insightcontent4 svg {
   height: 50px;
   width: 50px;
-  color: #242C6A;
   padding: 5px;
 }
 
@@ -543,16 +539,120 @@ span#closebtn {
   margin-top: 60px;
   width: 250px;
   height: 250px;
-  background: conic-gradient(#F14F5E 0% 25%, #F7D720 25% 50%, #DFEFE4 50% 75%, #242C6A 75% 100%);
+  background: conic-gradient(#F14F5E 0% 80%, #F7D720 80% 90%, #DFEFE4 90% 95%, #242C6A 95% 100%);
   border-radius: 50%;
+}
+
+/* more options for tasks */
+
+.optionsbtn {
+  height: 25.5px;
+  width: 5px;
+  position: absolute;
+  margin-left: 40px;
+}
+
+div.options {
+  width: 145px;
+  height: auto;
+  padding: 6px 0 6px 0;
+}
+
+div#optionitem1 {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  font-family: 'book';
+  font-size: 18px;
+  color: black;
+  box-shadow: none;
+  letter-spacing: .5px;
+  padding: 4px 0 4px 0;
+}
+
+div#optionitem2 {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  font-family: 'book';
+  font-size: 18px;
+  color: black;
+  box-shadow: none;
+  letter-spacing: .5px;
+  padding: 4px 0 4px 0;
+}
+
+hr#optionline {
+  padding: 0;
+}
+
+a.extraopt-container {
+  background: none;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:auto;
+  height:100%;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+a.extraopt-container .options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color:#BFBFBA;
+  position:absolute;
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 1.5px;
+  margin-left: 0;
+  bottom:0;
+  right: 0;
+  top: 0;
+  padding: 0;
+  z-index:1;
+  font-size:20px;
+  border-radius:10px;
+  background:rgb(255, 255, 255);
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+a.extraopt-container div:before {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  margin-left: 0;
+}
+
+a.extraopt-container:focus div {
+  bottom: 0;
+  right: 0;
+  visibility: visible;
+  opacity:1;
+  margin-left: 0;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.11) !important;
 }
 
 /* emoji react micro interaction */
 a.emojicontainer {
   color:#BFBFBA;
   background: none;
-  text-decoration:none;
-  font-family:fontawesome;
+  text-decoration: none;
+  font-family: fontawesome;
   font-style: normal;
   position: relative;
   display: flex;
@@ -589,6 +689,7 @@ a.emojicontainer span {
   -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 
 /* pop-up text arrow */
 

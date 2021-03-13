@@ -21,10 +21,10 @@ const Insights = ({show, setShow, closeModalHandler, inputValue, setInputValue }
               Jennifer </h2>
           </div>
           <ul className="tasknav">
-            <Link to ="/recent" className="task-link">
+            <Link to ="/recent">
               <h3> Recent </h3>
             </Link>
-            <Link to ="/tasks" className="task-link">
+            <Link to ="/tasks">
               <h3> Tasks </h3>
             </Link>
             <Link to ="/insights" className="task-link">
@@ -38,7 +38,7 @@ const Insights = ({show, setShow, closeModalHandler, inputValue, setInputValue }
                   <p>Number of Completed Tasks</p>
               </div>
                 <div className="multigraph">
-                    <span className="tooltip">0/0</span>
+                    <span className="tooltip">9/16</span>
                     <span className="graph"></span>
                 </div>
             {/* insights slider */}
@@ -47,19 +47,19 @@ const Insights = ({show, setShow, closeModalHandler, inputValue, setInputValue }
               </div>
             {/*users*/}
             <div className="insightcontent">
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort3">
+                    <FaUserCircle/><p>3/5</p>
                 </div>
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort3">
+                    <FaUserCircle/><p>2/4</p>
                 </div>
             </div>
             <div className="insightcontent2">
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort3">
+                    <FaUserCircle/><p>3/3</p>
                 </div>
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort3">
+                    <FaUserCircle/><p>1/4</p>
                 </div>
             </div>
           </div>   
@@ -72,19 +72,19 @@ const Insights = ({show, setShow, closeModalHandler, inputValue, setInputValue }
               <div class="pie-chart"></div>
               {/*users*/}
             <div className="insightcontent3">
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort1">
+                    <FaUserCircle/><p>38%</p>
                 </div>
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort2">
+                    <FaUserCircle/><p>80%</p>
                 </div>
             </div>
             <div className="insightcontent4">
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort3">
+                    <FaUserCircle/><p>23%</p>
                 </div>
-                <div className="insightalign">
-                    <FaUserCircle/><p>0/0</p>
+                <div className="insightalign" id="effort4">
+                    <FaUserCircle/><p>23%</p>
                 </div>
             </div>
           </div>

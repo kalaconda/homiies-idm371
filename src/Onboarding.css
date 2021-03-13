@@ -19,7 +19,7 @@ input#create-group {
 .onboarding {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 5rem;
 }
 
 .onboarding h1 {
