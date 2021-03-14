@@ -1,6 +1,8 @@
 import React from 'react';
 import options from '../images/moreopt.png';
+import effortlvl from '../images/effort_level.png';
 import "../check-anim.css";
+import { FaUserCircle } from 'react-icons/fa';
 
 const TodoItem = ({todos, removeTodo}) => {
     return(
@@ -8,6 +10,7 @@ const TodoItem = ({todos, removeTodo}) => {
         {todos.map(todoItem => (
             <div class="todoItemm">
                 <div key={todoItem.todoId} className="todoItem">
+
                     <div class="cbx">
                         <input type="checkbox" /*onClick={() => removeTodo(todoItem.todoId)}*/></input>
                         <label for="cbx"></label>
@@ -16,13 +19,18 @@ const TodoItem = ({todos, removeTodo}) => {
                         </svg>
                     </div>
                     
-                    <p>
-                        <span class="strikethrough">
-                            {/* text being added to the todo item */}
-                            {todoItem.todoText}
-                        </span>
-                    </p>
+                    <div className="taskcontain">
+                        <div className="taskcontent">
+                            <span class="strikethrough">
+                                {/* text being added to the todo item */}
+                                {todoItem.todoText}
+                            </span>
+                            <p id="datedue">Today</p>
+                            <span className="user"><FaUserCircle/></span>
+                        </div>
+                        <img className="effortlvl" src={effortlvl} alt="effort level"/>
                     </div>
+                </div>
 
                 <div className="reactcontainer">
                     <a href="#" className="extraopt-container">
@@ -37,7 +45,7 @@ const TodoItem = ({todos, removeTodo}) => {
                             </div>
                         </div>
                     </a> 
-                </div>
+                        </div>
                 </div>
                 
         ))}

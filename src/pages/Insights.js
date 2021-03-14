@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { RiArrowLeftSFill } from 'react-icons/ri'
 import { RiArrowRightSFill } from 'react-icons/ri'
+import progress from '../images/progress.png';
 
 /*
   add, display, complete, filter, and delete todos
@@ -37,13 +38,12 @@ const Insights = ({show, setShow, closeModalHandler, inputValue, setInputValue }
               <div className="cardheader">
                   <p>Number of Completed Tasks</p>
               </div>
-                <div className="multigraph">
-                    <span className="tooltip">9/16</span>
-                    <span className="graph"></span>
-                </div>
             {/* insights slider */}
-              <div className="insightslide">
-                <RiArrowLeftSFill/><p> this month </p><RiArrowRightSFill/>
+              <div className="insightscontain">
+                <div className="insightslide">
+                  <img className="progressbar" src={progress} alt="progress"/>
+                  <div className="thismonth"><RiArrowLeftSFill/><p> this month </p><RiArrowRightSFill/></div>
+                </div>
               </div>
             {/*users*/}
             <div className="insightcontent">

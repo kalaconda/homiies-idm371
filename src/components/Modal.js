@@ -2,6 +2,7 @@ import React from "react";
 import { BiArrowBack } from 'react-icons/bi';
 import plus_button from '../images/plus_button.png';
 import "../Modal.css";
+import effortlvl from '../images/effort_level.png';
 
 const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmit }) => {
     return (
@@ -60,7 +61,7 @@ const Modal = ({ show, closeModalHandler, inputValue, setInputValue, handleSubmi
                                 <option value="Weekly">Medium</option>
                                 <option value="Bi-Weekly">Difficult</option>
                             </select>
-
+                            <img className="effortlvl" id="effortlvll" src={effortlvl} alt="effort level"/>
                         </div>
                     </div>
 

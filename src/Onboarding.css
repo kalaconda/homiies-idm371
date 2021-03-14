@@ -80,7 +80,7 @@ label {
     font-family: medium;
 }
 .recent-reaction{
-    width: 30px;
+    width: 35px;
     padding: 5px;
 }
 .reactions button{
@@ -90,8 +90,10 @@ label {
 .reactions{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     height: 70px;
+    width: 30px;
 }
 
 div.content {

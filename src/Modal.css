@@ -128,10 +128,16 @@ form.deadline-form input {
 }
 
 .effort {
+    display: flex;
     flex-direction: row;
     margin: 1.5rem 0;
     text-align: left;
     padding: 0;
+}
+
+#effortlvll.effortlvl {
+    margin-left: 210px;
+    margin-top: 0;
 }
 
 select.effort-dropdown {
@@ -169,7 +175,6 @@ hr {
     border-top: none;
     border-left: none;
     border-right: none;
-    padding: 10px;
 }
 
 /* Toggle Button */

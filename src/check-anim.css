@@ -1,19 +1,54 @@
 div.todoItemm {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  height: 87px;
+  height: 100px;
   width: 80%;
   background-color: #F1F3FF;
   border-radius: 5px;
   margin-top: 20px;
+  padding: 15px;
 }
 
 div.todoItem {
   font-family: 'ubunturegular';
-  width: 100%;
+  width: auto;
   height: 25px;
+}
+
+.taskcontain {
+  display: flex;
+  flex-direction: row;
+  width: 290px;
+}
+
+.taskcontent {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-left: 40px;
+}
+
+.effortlvl {
+  width: 25px;
+  height: 25px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+p#datedue {
+  margin: 0;
+  font-family: 'light';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.678);
+  text-align: left;
+  padding: 2px 0 5px 0;
+}
+
+span.user {
+  font-size: 25px;
+  width: 0;
+  margin-left: 0;
+  color: #242C6A;
 }
 
 .checkbox{
@@ -110,7 +145,6 @@ div.todoItem {
     position: absolute;
     width: 24px;
     height: 24px;
-    margin-left: 30px;
     /* top: calc(50vh - 12px);
     left: calc(50vw - 12px); */
   }
@@ -215,7 +249,9 @@ div.todoItem {
 
   /* Strikethrough animation: https://codepen.io/EdenSG/pen/jPENoE */
 
-
+.strikethrough {
+  margin-left: 0;
+}
   
 .strikethrough_end {
     display: inline-block;
