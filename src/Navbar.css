@@ -79,7 +79,7 @@
   
   .nav-menu-items {
     width: 100%;
-    z-index: 100;
+    z-index: 999;
   }
   
   .navbar-toggle {

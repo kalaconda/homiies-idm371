@@ -688,7 +688,9 @@ a.emojicontainer:focus span {
   margin-left: 0;
 }
 
-
+p.errorMsg {
+  color: rgb(214, 0, 0);
+}
 
 /* fonts */
 @font-face {
