@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
+import { db, auth } from './components/fire';
 import Login from "./pages/Login";
 import Tasks from "./pages/Tasks";
 import Insights from "./pages/Insights";
 import Recent from "./pages/Recent";
-import "./App.css";
-import { db, auth } from './components/fire';
 import Onboarding1 from "./pages/Onboarding1";
 import Onboarding2 from "./pages/Onboarding2";
+import Notifications from "./pages/Notifications";
+import "./App.css";
 
 function App() {
 
@@ -163,6 +164,9 @@ function App() {
             </Route>
             <Route exact path="/recent">
               <Recent closeModalHandler={closeModalHandler} setShow={setShow} show={show} inputValue={inputValue} setInputValue={setInputValue} />
+            </Route>
+            <Route exact path="/notifications">
+              <Notifications />
             </Route>
           </>
         ) : (

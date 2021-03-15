@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
+import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import logo60x60 from '../images/icon60x60.png';
@@ -14,7 +15,6 @@ function NavBar() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-fix">
           <div className="navbar-items">
             <Link to="#" className="menu-bars">
               <FaIcons.FaBars onClick={showSidebar} />
@@ -23,7 +23,11 @@ function NavBar() {
           <div className="navbar-items">
             <img src={logo60x60} className="App-logo2" alt="logo" />
           </div>
-        </div>
+          <div className="navbar-items">
+            <Link to="/notifications" className="notificationicon">
+              <IoIcons.IoIosNotificationsOutline />
+            </Link>
+          </div>
       </div>
 
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

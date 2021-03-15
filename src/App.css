@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,7 +36,6 @@
   overflow-y: hidden;
   height: 100%;
   padding-bottom: 90px;
-  margin-top: 1.5rem;
 }
 
 /* TODO LIST */
@@ -226,6 +226,7 @@ h2 {
 h2.taskwelcometxt {
   font-size: 30px;
   color: #242C6A;
+  padding-top: 20px;
 }
 
 h3 {
@@ -524,11 +525,11 @@ span#closebtn {
   height: 25.5px;
   width: 5px;
   position: absolute;
-  margin-left: 70px;
+  margin-left: 25px;
 }
 
 div.options {
-  width: 145px;
+  width: 130px;
   height: auto;
   padding: 6px 0 6px 0;
 }

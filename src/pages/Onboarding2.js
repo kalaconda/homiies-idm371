@@ -4,7 +4,6 @@ import "../Onboarding.css";
 import { HiOutlineUpload } from 'react-icons/hi';
 import { FiCopy } from 'react-icons/fi';
 
-//const Onboarding1 = ({ handleLogOut}) => {
 const Onboarding2 = () => {
   return (
     <div className="App">
@@ -28,9 +27,6 @@ const Onboarding2 = () => {
                 <button className="o-screen-button-style-2">Share Code</button>
                 </div>
           </div>
-        {/*<a onClick={() => handleLogOut()}>
-          <div className="pinkbtn">Logout</div>
-          </a>*/}
     </div>
     </div>
   );
